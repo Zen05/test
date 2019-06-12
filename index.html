@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/index.css" />
+    <style>
+    .contant{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f6;
+    }
+    .header{
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: #ffffff;
+        padding:10px 0 3px 0;
+    }
+    .header-box{
+        width: 48%;
+        height: 10rem;
+        border:solid 2px #eeeeee;
+        background: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-box>h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .header-box>p{
+        font-size: 12px;
+        color: #aaaaaa;
+    }
+    /*选中状态下的样式*/
+    .header-active{
+        background-color: #fff8f6;
+        color: #fd4d57;
+        border-color: #f6a69a;
+    }
+    .header-active>p{
+        color: #fcd2cd;
+    }
+    .body{
+        width:100%;
+        height:200px;
+        background: #ffffff;
+        margin-top:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .body-title{
+        display: flex;
+        margin-top:20px;
+        margin-left: 10px;
+    }
+    .body-title>span:first-child{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .body-title>span:nth-child(2){
+        font-size: 12px;
+        line-height: 1.8;
+        color: #aaaaaa;
+    }
+    .body-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-list{
+        display: flex;
+        justify-content: space-around;
+    }
+    .body-item{
+        width:24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body-item>div{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffe9e8;
+        color: #fcd2cd;
+        border-radius: 50%;
+    }
+    .body-item>p{
+        font-size: 10px;
+        margin-top: 5px;
+        color: #e9e9e9;
+    }
+    .body-item-active>div{
+        color: #fd4d57;
+    }
+    .body-item-active>p{
+        color:black;
+    }
+    </style>
+</head>
+<body>
+    <div class="contant">
+        <div class="header">
+            <div class="header-box header-active">
+                <h1>高级版</h1>
+                <p>适合独立摄影师</p>
+            </div>
+            <div class="header-box">
+                <h1>定制版</h1>
+                <p>适合小型工作室</p>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body-title">
+                <span >高级版</span>&nbsp;
+                <span>(适合<span style="color:#fd4d57">独立摄影师</span>)</span> 
+            </div>
+            <div class="body-box">
+                <div class="body-list">
+                    <div class="body-item body-item-active">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                </div>
+                <div  class="body-list" style="margin-top:10px;">
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                    <div class="body-item">
+                        <div>A</div>
+                        <p>标题1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <script src="./static/js/jquery-1.11.3.js"></script>
+    <script>
+    
+    </script>
+</html>
